@@ -1,0 +1,531 @@
+/* Start global */
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Opensans;
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Oswald, Opensans;
+    line-height: 1.5;
+}
+
+button {
+    font-family: inherit;
+}
+
+.clear {
+    content: "";
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.heading-section {
+    text-align: center;
+    font-family: Oswald;
+}
+
+.heading-section h3 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.heading-section h5 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 18px;
+
+}
+
+.heading-section h5 span {
+    opacity: 0.60;
+}
+
+/* End Global */
+
+/* Start Nav */
+nav {
+    background-color: black;
+
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a i {
+    padding: 12px 16px;
+}
+
+nav a i:hover {
+    background-color: silver;
+    color: black;
+}
+
+nav .right-icon {
+    float: right;
+}
+
+/* End Nav */
+
+/* Start Section-Header */
+#section-header {
+    text-align: center;
+    padding: 75px 0px;
+    font-family: oswald;
+}
+
+#section-header h1 {
+    font-size: 48px;
+    line-height: 72px;
+}
+
+#section-header p {
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+#section-header p span {
+    background-color: black;
+    color: white;
+    padding: 0px 5px;
+}
+
+/* End Section-Header */
+
+
+/* Start Header */
+header {
+    position: relative;
+}
+
+header .img-content {
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 50px;
+    letter-spacing: 3px;
+}
+
+header .img-content h3 {
+    line-height: 54px;
+    font-size: 36px;
+}
+
+header .img-content h1 {
+    line-height: 96px;
+    font-size: 64px;
+}
+
+header .img-content button {
+    border: none;
+    background-color: rgba(221, 221, 221, 0.7);
+    font-size: 1.1rem;
+    padding: 17px 22px;
+    cursor: pointer;
+}
+
+header .img-content h3,
+header .img-content h1,
+header .img-content button {
+    text-transform: uppercase;
+}
+
+header .img-content button:hover {
+    background-color: rgba(226, 226, 226, 0.9);
+}
+
+/* End Header */
+
+/* --------------- Start Main ---------------*/
+#main {
+    background-color: #f1f1f1;
+    /* margin-top: -10px; */
+}
+
+#main .container {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+
+/* --- Start Main-Section ---  */
+.main-section {
+    float: left;
+    width: calc(70% - 16px);
+    margin-right: 16px;
+    /* background-color: #fff; */
+}
+
+.main-section .item-section {
+    background-color: #fff;
+    margin-bottom: 50px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-family: opensans;
+    color: #000000;
+}
+
+.main-section .img-section img {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+.main-section .content-section .content-p {
+    text-align: justify !important;
+    margin: 1em 0;
+}
+
+.main-section .content-section .content-p span {
+    font-weight: bolder;
+}
+
+.main-section .buttons-section {
+    margin-top: 1em;
+    margin-bottom: 50px;
+}
+
+.main-section .buttons-section .btn-like {
+    float: left;
+}
+
+.main-section .buttons-section .btn-like button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #bebebe;
+    font-weight: 700;
+}
+
+.main-section .buttons-section .btn-like button:hover {
+    background-color: #b2b2b2;
+}
+
+.main-section .buttons-section .btn-replies {
+    float: right;
+}
+
+.main-section .buttons-section .btn-replies button {
+    border: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #000000;
+    font-weight: 700;
+}
+
+.main-section .buttons-section .btn-replies button:hover {
+    background-color: #b2b2b2;
+    color: #000000;
+}
+
+.main-section .buttons-section .btn-replies button span {
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: #fff;
+    color: black;
+    margin-left: 5px;
+}
+
+.writer-section {
+    padding-top: 20px;
+    border-top: 1px solid rgb(235, 235, 235);
+    margin-bottom: 16px;
+}
+
+.writer-section .writer-img {
+    float: left;
+    margin-right: 40px;
+}
+
+.writer-section .writer-img img {
+    width: 90px;
+}
+
+.writer-section .writer-content {
+    float: left;
+}
+
+.writer-section .writer-content h4 {
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 16px;
+    /* margin-block-start: 1.33em; */
+    /* margin-block-end: 1.33em; */
+}
+
+.writer-section .writer-content h4 span {
+    opacity: 0.60;
+    font-size: 14px;
+}
+
+.writer-section .writer-content p {
+    margin-block: 1em 1em;
+    font-size: 15px;
+    /* line-height: 1.5; */
+}
+
+/* --- End Main-Section ---  */
+
+
+/* --- Start Main-Aside --- */
+.main-aside {
+    float: right;
+    width: calc(30% - 16px);
+    margin-left: 16px;
+}
+
+.aside-item {
+    margin-bottom: 40px;
+}
+
+.aside-item-1-content {
+    font-family: Opensans;
+    margin-top: -10px;
+    background-color: black;
+    color: white;
+    padding: 20px 20px 10px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.aside-item-1-content h4 {
+    font-size: 20px;
+}
+
+.aside-item-1-content p {
+    margin: 1em 0;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.aside-item .aside-item-head {
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+}
+
+.aside-item .aside-item-head h4 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.aside-item-2-body {
+    color: #000;
+    background-color: #fff;
+}
+
+.aside-item-2-body li {
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    color: #000;
+    padding: 16px;
+    font-family: "Open Sans";
+}
+
+.aside-item-2-body li:hover {
+    background-color: #dfdfdf;
+}
+
+.aside-item-2-body li img {
+    width: 50px;
+    float: left;
+    margin-right: 16px;
+}
+
+.aside-item-2-body li .span1 {
+    font-size: 18px;
+}
+
+.aside-item-3-body {
+    padding: 0.01em 16px;
+    background-color: #fff;
+}
+
+.aside-item-3-body div {
+    height: 200px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #f1f1f1;
+    padding: 0.01em 16px;
+    position: relative;
+}
+
+.aside-item-3-body div p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aside-item-4-body {
+    padding-top: 10px;
+    background-color: #fff;
+}
+
+.aside-item-4-body div {
+    padding: 0.01em 16px;
+}
+
+
+.aside-item-4-body div span {
+    cursor: pointer;
+    font-family: "Open Sans";
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    margin-bottom: 16px !important;
+}
+
+.aside-item-4-body div span.active {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.aside-item-5-body {
+    background-color: #fff;
+}
+
+.aside-item-5-body .aside-item-5-body-item {
+    float: left;
+    width: calc(100% / 2);
+    padding: 15px 8px;
+}
+
+.aside-item-5-body img {
+    padding-bottom: 5px;
+}
+
+
+.aside-item-6-body {
+    padding: 8px 16px;
+    font-size: 24px;
+    background-color: #fff;
+}
+
+.aside-item-6-body a {
+    color: #000;
+    transition: opacity 0.2s;
+}
+
+.aside-item-6-body a:hover {
+    opacity: 0.7;
+}
+
+.aside-item-7-body {
+    color: #000;
+    background-color: #fff;
+    padding: 0.01em 16px;
+}
+
+.aside-item-7-body p {
+    font-family: "Open Sans";
+    margin: 1em 0;
+}
+
+.aside-item-7-body p input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    display: block;
+    overflow: visible;
+}
+
+.aside-item-7-body p button {
+    color: #fff;
+    background-color: #f44336;
+    border: none;
+    padding: 8px 16px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+}
+
+/* --- End Main-Aside --- */
+
+
+
+/* --------------- End Main --------------- */
+
+
+/* Start Footer */
+footer {
+    background-color: #616161;
+    padding: 50px;
+    /* font-size: 15px; */
+}
+
+footer #go-top {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 32px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer #go-top:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+footer button i {
+    margin-right: 15px;
+}
+
+footer p {
+    color: #fff;
+    /* font-size: 17px; */
+    font-weight: 100;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+/* End Footer */
